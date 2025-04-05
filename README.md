@@ -4,7 +4,7 @@ A modern, cyberpunk-themed web application that helps users pack efficiently usi
 
 ## Preview
 
-![Stash Website Preview](preview.png)
+![Stash Website Preview](image.png)
 
 ## Features
 
