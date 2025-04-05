@@ -1,10 +1,36 @@
-# Stash – Your AI Smart Packing Assistant 🎒✨
-Stash is an AI-powered packing assistant that helps you decide what to pack based on your trip details. Whether you're heading for a weekend getaway, a business trip, or an adventurous trek, Stash ensures you never forget an essential item.
+# Stash - AI Smart Packing Assistant
 
-✨ Features:
-✅ AI-driven packing suggestions based on trip type, duration, and weather
-✅ Customizable packing lists for different needs (business, leisure, adventure)
-✅ Smart reminders for travel essentials (passport, chargers, medications, etc.)
-✅ Lightweight and user-friendly interface
+A modern, cyberpunk-themed web application that helps users pack efficiently using AI technology.
 
-🚀 Pack smarter, travel lighter with Stash!
+## Preview
+
+![Stash Website Preview](preview.png)
+
+## Features
+
+- Matrix-inspired 3D grid background animation
+- Cyberpunk UI design with neon green accents
+- Responsive layout for all devices
+- Typewriter text animation effects
+- Modern glassmorphism navbar
+
+## Technologies Used
+
+- HTML5
+- CSS3 (with modern animations and effects)
+- Custom grid animations
+- Google Fonts (Share Tech Mono)
+
+## Getting Started
+
+1. Clone the repository
+2. Open `index.html` in your browser
+3. No additional dependencies required
+
+## Design Features
+
+- Neon green color scheme (#00FF00)
+- 3D perspective grid background
+- Smooth animations and transitions
+- Responsive design for all screen sizes
+- Matrix-inspired typography
