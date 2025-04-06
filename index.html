@@ -9,6 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <!-- 3D Grid Background -->
@@ -45,6 +50,50 @@
                 <h1 class="gradient-text">Pack Smarter with Stash</h1>
                 <p class="subheading">Your AI-powered travel companion that helps you pack efficiently and stress-free.</p>
                 <button class="btn-primary btn-large">Try It Now</button>
+            </div>
+        </section>
+
+        <!-- AI Packing Interface -->
+        <section id="packing-interface" class="packing-section">
+            <div class="container">
+                <div class="packing-form">
+                    <h2 class="section-title">Plan Your Trip</h2>
+                    <form id="tripForm" class="cyber-form">
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" id="destination" name="destination" placeholder="Where are you going?" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="startDate">Start Date</label>
+                                <input type="date" id="startDate" name="startDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="endDate">End Date</label>
+                                <input type="date" id="endDate" name="endDate" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="tripType">Trip Type</label>
+                            <select id="tripType" name="tripType" required>
+                                <option value="">Select trip type</option>
+                                <option value="business">Business</option>
+                                <option value="leisure">Leisure</option>
+                                <option value="adventure">Adventure</option>
+                                <option value="beach">Beach</option>
+                                <option value="winter">Winter</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="activities">Planned Activities</label>
+                            <textarea id="activities" name="activities" placeholder="What activities are you planning? (e.g., hiking, swimming, meetings)" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-glow">Generate Packing List</button>
+                    </form>
+                </div>
+                <div class="packing-result" id="packingResult">
+                    <!-- AI-generated packing list will appear here -->
+                </div>
             </div>
         </section>
     </main>
