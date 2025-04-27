@@ -5,10 +5,14 @@ A modern, AI-powered travel companion that helps you pack efficiently and stress
 ## Preview 🖼️
 
 ### Home Page
-![Stash Website Preview](assets/image.png)
+![Stash Website Preview](assets/1.png)
 
-### AI Packing Interface
-![Stash AI Interface](assets/image2.png)
+### Login Page
+![Stash Login Page](assets/2.png)
+
+### AI Interface
+![Stash AI Interface](assets/3.png)
+
 
 ## Features ✨
 

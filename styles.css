@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
+<<<<<<< HEAD
 /* Base Styles */
+=======
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886
 body {
   margin: 0;
   padding: 0;
@@ -11,6 +14,7 @@ body {
   overflow-x: hidden;
 }
 
+<<<<<<< HEAD
 /* Neon Grid Background */
 body::before {
   content: "";
@@ -38,6 +42,8 @@ body::before {
 }
 
 /* Navigation */
+=======
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886
 nav {
   display: flex;
   justify-content: space-between;
@@ -51,6 +57,7 @@ nav {
   gap: 32px;
   font-size: 1.2rem;
   letter-spacing: 1px;
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
 }
@@ -63,6 +70,16 @@ nav {
 }
 
 .nav-links li a:hover {
+=======
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-links li:hover {
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886
   color: #fff;
   text-shadow: 0 0 8px #39ff14;
 }
@@ -72,7 +89,10 @@ nav {
   gap: 16px;
 }
 
+<<<<<<< HEAD
 /* Button Styles */
+=======
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886
 .btn-outline, .btn-neon {
   background: transparent;
   border: 2px solid #39ff14;
@@ -82,9 +102,13 @@ nav {
   font-family: inherit;
   border-radius: 6px;
   cursor: pointer;
+<<<<<<< HEAD
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+=======
+  transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886
 }
 
 .btn-outline:hover {
@@ -110,7 +134,10 @@ nav {
   padding: 18px 48px;
 }
 
+<<<<<<< HEAD
 /* Main Content Styles */
+=======
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886
 main {
   display: flex;
   flex-direction: column;
@@ -118,7 +145,10 @@ main {
   justify-content: center;
   min-height: 80vh;
   text-align: center;
+<<<<<<< HEAD
   padding: 0 20px;
+=======
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886
 }
 
 h1 {
@@ -126,6 +156,14 @@ h1 {
   margin: 0 0 24px 0;
   text-shadow: 0 0 8px #39ff14, 0 0 16px #39ff14;
   letter-spacing: 4px;
+<<<<<<< HEAD
+=======
+  overflow: visible;
+  white-space: normal;
+  border-right: none;
+  width: auto;
+  animation: none;
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886
 }
 
 .subtitle {
@@ -150,6 +188,7 @@ h1 {
   50% { border-color: #39ff14; }
 }
 
+<<<<<<< HEAD
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
   h1 {
@@ -191,3 +230,31 @@ h1 {
     padding: 14px 32px;
   }
 }
+=======
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: repeating-linear-gradient(
+    to right, 
+    rgba(57,255,20,0.08) 0 2px, 
+    transparent 2px 40px
+  ), repeating-linear-gradient(
+    to bottom, 
+    rgba(57,255,20,0.08) 0 2px, 
+    transparent 2px 40px
+  );
+  animation: grid-move 20s linear infinite;
+  background-size: 40px 40px, 40px 40px;
+}
+
+@keyframes grid-move {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 0 40px, 0 40px;
+  }
+}
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886

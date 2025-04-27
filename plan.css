@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886
 body {
   margin: 0;
   padding: 0;
@@ -8,11 +13,124 @@ body {
   overflow-x: hidden;
 }
 
+<<<<<<< HEAD
+=======
+.plan-title {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 3rem;
+  color: #39ff14;
+  text-shadow: 0 0 12px #39ff14, 0 0 24px #39ff14;
+  letter-spacing: 4px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.plan-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+.trip-form {
+  background: #111;
+  border: 2px solid #39ff14;
+  border-radius: 12px;
+  box-shadow: 0 0 24px #39ff14;
+  padding: 32px;
+  min-width: 420px;
+  max-width: 500px;
+  color: #39ff14;
+  font-family: 'Share Tech Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.trip-form label {
+  margin-top: 16px;
+  margin-bottom: 4px;
+  font-size: 1.1rem;
+  color: #39ff14;
+  letter-spacing: 2px;
+}
+
+.trip-form input,
+.trip-form select,
+.trip-form textarea {
+  width: 100%;
+  padding: 10px;
+  background: #000;
+  border: 1.5px solid #39ff14;
+  border-radius: 4px;
+  color: #39ff14;
+  font-family: inherit;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 0 8px #39ff1433 inset;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.trip-form input:focus,
+.trip-form select:focus,
+.trip-form textarea:focus {
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 12px #39ff14;
+}
+
+.date-row {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-neon {
+  background: transparent;
+  border: 2px solid #39ff14;
+  color: #39ff14;
+  padding: 10px 28px;
+  font-size: 1rem;
+  font-family: inherit;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+  box-shadow: 0 0 16px #39ff14, 0 0 32px #39ff14 inset;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.btn-neon:hover {
+  background: #39ff14;
+  color: #000;
+  box-shadow: 0 0 32px #39ff14, 0 0 64px #39ff14 inset;
+}
+
+.packing-plan-output {
+  flex: 1;
+  min-height: 400px;
+  margin-left: 40px;
+  background: #000;
+  border: 2px solid #39ff14;
+  border-radius: 12px;
+  box-shadow: 0 0 24px #39ff14;
+  color: #39ff14;
+  font-size: 1.1rem;
+  padding: 24px;
+  font-family: 'Share Tech Mono', monospace;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Neon grid background like index.html */
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886
 body::before {
   content: "";
   position: fixed;
   inset: 0;
   z-index: -1;
+<<<<<<< HEAD
   background: 
     repeating-linear-gradient(
       to right, 
@@ -24,16 +142,39 @@ body::before {
       rgba(57,255,20,0.08) 0 2px, 
       transparent 2px 40px
     );
+=======
+  background: repeating-linear-gradient(
+    to right, 
+    rgba(57,255,20,0.08) 0 2px, 
+    transparent 2px 40px
+  ), repeating-linear-gradient(
+    to bottom, 
+    rgba(57,255,20,0.08) 0 2px, 
+    transparent 2px 40px
+  );
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886
   animation: grid-move 20s linear infinite;
   background-size: 40px 40px, 40px 40px;
 }
 
 @keyframes grid-move {
+<<<<<<< HEAD
   0% { background-position: 0 0, 0 0; }
   100% { background-position: 0 40px, 0 40px; }
 }
 
 /* Navigation */
+=======
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 0 40px, 0 40px;
+  }
+}
+
+/* Nav bar styles */
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886
 nav {
   display: flex;
   justify-content: space-between;
@@ -47,6 +188,7 @@ nav {
   gap: 32px;
   font-size: 1.2rem;
   letter-spacing: 1px;
+<<<<<<< HEAD
   margin: 0;
   padding: 0;
 }
@@ -59,6 +201,26 @@ nav {
 }
 
 .nav-links li a:hover {
+=======
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-links li:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #39ff14;
+}
+
+.nav-links li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-links li:hover a {
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886
   color: #fff;
   text-shadow: 0 0 8px #39ff14;
 }
@@ -68,6 +230,7 @@ nav {
   gap: 16px;
 }
 
+<<<<<<< HEAD
 /* Main Content */
 .plan-title {
   text-align: center;
@@ -119,10 +282,49 @@ nav {
   background: rgba(0, 0, 0, 0.7);
   border: 1.5px solid #39ff14;
   border-radius: 6px;
+=======
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.login-form {
+  background: #111;
+  border: 2px solid #39ff14;
+  border-radius: 12px;
+  box-shadow: 0 0 24px #39ff14;
+  padding: 40px 32px 32px 32px;
+  min-width: 340px;
+  max-width: 400px;
+  color: #39ff14;
+  font-family: 'Share Tech Mono', monospace;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-form label {
+  margin-top: 16px;
+  margin-bottom: 4px;
+  font-size: 1.1rem;
+  color: #39ff14;
+  letter-spacing: 2px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  background: #000;
+  border: 1.5px solid #39ff14;
+  border-radius: 4px;
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886
   color: #39ff14;
   font-family: inherit;
   font-size: 1rem;
   outline: none;
+<<<<<<< HEAD
   transition: all 0.3s ease;
 }
 
@@ -298,3 +500,13 @@ nav {
     margin-top: 20px;
   }
 }
+=======
+  box-shadow: 0 0 8px #39ff1433 inset;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.login-form input:focus {
+  border: 1.5px solid #fff;
+  box-shadow: 0 0 12px #39ff14;
+} 
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886

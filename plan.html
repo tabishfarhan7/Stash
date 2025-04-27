@@ -16,7 +16,11 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="nav-buttons">
+<<<<<<< HEAD
       <a href="login.html" class="btn-neon">LOG IN</a>
+=======
+      <a href="login.html" class="btn-outline">LOG IN</a>
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886
       <a href="plan.html" class="btn-neon">GET STARTED</a>
     </div>
   </nav>
@@ -56,7 +60,18 @@
       <!-- AI packing plan will appear here -->
     </div>
   </div>
+<<<<<<< HEAD
   <script src="plan.js">
   </script>  
+=======
+  <script>
+    const form = document.getElementById('tripForm');
+    const output = document.getElementById('packingPlanOutput');
+    form.onsubmit = (e) => {
+      e.preventDefault();
+      output.innerHTML = '<em>AI packing plan will appear here...</em>';
+    };
+  </script>
+>>>>>>> 94a8e068b4f92ec8b409eaa1fd1298054f41e886
 </body>
 </html> 
