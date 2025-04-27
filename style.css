@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #000;
+  color: #39ff14;
+  font-family: 'Share Tech Mono', monospace;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 60px 0 60px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.nav-links li {
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-links li:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #39ff14;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.btn-outline, .btn-neon {
+  background: transparent;
+  border: 2px solid #39ff14;
+  color: #39ff14;
+  padding: 10px 28px;
+  font-size: 1rem;
+  font-family: inherit;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+
+.btn-outline:hover {
+  background: #39ff14;
+  color: #000;
+  box-shadow: 0 0 16px #39ff14;
+}
+
+.btn-neon {
+  box-shadow: 0 0 16px #39ff14, 0 0 32px #39ff14 inset;
+  font-weight: bold;
+}
+
+.btn-neon:hover {
+  background: #39ff14;
+  color: #000;
+  box-shadow: 0 0 32px #39ff14, 0 0 64px #39ff14 inset;
+}
+
+.btn-neon.large {
+  margin-top: 40px;
+  font-size: 1.3rem;
+  padding: 18px 48px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0 0 24px 0;
+  text-shadow: 0 0 8px #39ff14, 0 0 16px #39ff14;
+  letter-spacing: 4px;
+  overflow: visible;
+  white-space: normal;
+  border-right: none;
+  width: auto;
+  animation: none;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  margin-bottom: 16px;
+  color: #39ff14;
+  text-shadow: 0 0 4px #39ff14;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #39ff14;
+  width: 0;
+  animation: typing 4s steps(60, end) 2.5s forwards, blink-caret 0.7s step-end infinite 6.5s;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #39ff14; }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: repeating-linear-gradient(
+    to right, 
+    rgba(57,255,20,0.08) 0 2px, 
+    transparent 2px 40px
+  ), repeating-linear-gradient(
+    to bottom, 
+    rgba(57,255,20,0.08) 0 2px, 
+    transparent 2px 40px
+  );
+  animation: grid-move 20s linear infinite;
+  background-size: 40px 40px, 40px 40px;
+}
+
+@keyframes grid-move {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 0 40px, 0 40px;
+  }
+}
