@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Plan Your Trip</title>
+  <link rel="stylesheet" href="plan.css"/>
+</head>
+<body>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="how-it-works.html">How It Works</a></li>
+      <li><a href="features.html">Features</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-buttons">
+      <a href="login.html" class="btn-neon">LOG IN</a>
+      <a href="plan.html" class="btn-neon">GET STARTED</a>
+    </div>
+  </nav>
+  <h1 class="plan-title">PLAN YOUR TRIP</h1>
+  <div class="plan-container">
+    <form id="tripForm" class="trip-form">
+      <label for="destination">DESTINATION</label>
+      <input type="text" id="destination" name="destination" placeholder="Where are you going?" required />
+
+      <div class="date-row">
+        <div>
+          <label for="start-date">START DATE</label>
+          <input type="date" id="start-date" name="start-date" placeholder="dd-mm-yyyy" required />
+        </div>
+        <div>
+          <label for="end-date">END DATE</label>
+          <input type="date" id="end-date" name="end-date" placeholder="dd-mm-yyyy" required />
+        </div>
+      </div>
+
+      <label for="trip-type">TRIP TYPE</label>
+      <select id="trip-type" name="trip-type" required>
+        <option value="">Select trip type</option>
+        <option value="business">Business</option>
+        <option value="leisure">Leisure</option>
+        <option value="adventure">Adventure</option>
+        <option value="family">Family</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="activities">PLANNED ACTIVITIES</label>
+      <textarea id="activities" name="activities" rows="2" placeholder="What activities are you planning? (e.g., hiking, swimming, meetings)"></textarea>
+
+      <button type="submit" class="btn-neon" style="width:100%;margin-top:16px;">GENERATE PACKING LIST</button>
+    </form>
+    <div class="packing-plan-output" id="packingPlanOutput">
+      <!-- AI packing plan will appear here -->
+    </div>
+  </div>
+  <script src="plan.js">
+  </script>  
+</body>
+</html> 
